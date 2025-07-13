@@ -1,0 +1,361 @@
+.frame {
+  background-color: #4c3a2f;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.frame .div {
+  background-color: #4c3a2f;
+  width: 1280px;
+  height: 800px;
+  position: relative;
+}
+
+#icon {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  bottom: -1px;
+  left: 41px;
+  fill: #bda88d;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#icon:hover {
+  transform: scale(1.15);
+}
+
+.frame .overlap {
+  position: absolute;
+  width: 290px;
+  height: 72px;
+  top: 700px;
+  left: 978px;
+  background-color: #14181b;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.frame .overlap:hover {
+  transform: scale(1.03);
+}
+
+.frame .overlap-group {
+  position: absolute;
+  width: 1264px;
+  height: 65px;
+  top: 10px;
+  left: 7px;
+}
+
+.frame .rectangle {
+  width: 1262px;
+  height: 65px;
+  top: 0;
+  position: absolute;
+  left: 0;
+  background-color: #14181b;
+  border-radius: 10px;
+}
+
+.frame .text-wrapper,
+.frame .text-wrapper-2 {
+  position: absolute;
+  top: 28px;
+  font-family: "Volkhov-Regular", Helvetica;
+  font-weight: 400;
+  color: #bda88d;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  cursor: pointer;
+  
+}
+
+.frame .text-wrapper {
+  left: 1157px;
+}
+
+.frame .text-wrapper-2 {
+  left: 1057px;
+}
+
+
+.frame .text-wrapper::after,
+.frame .text-wrapper-2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 1px;
+  width: 0;
+  background: #bda88d;
+  transition: width 0.4s ease;
+}
+
+.frame .text-wrapper:hover::after,
+.frame .text-wrapper-2:hover::after {
+  width: 100%;
+}
+
+
+.frame .text-wrapper-3 {
+  position: absolute;
+  width: 168px;
+  top: 22px;
+  left: 546px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  color: #bda88d;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .overlap-group-2 {
+  position: absolute;
+  width: 290px;
+  height: 589px;
+  top: 87px;
+  left: 979px;
+  background-color: #14181b;
+  border-radius: 10px;
+}
+
+
+.frame .p,
+.frame .text-wrapper-4,
+.frame .text-wrapper-5,
+.frame .roommate-matching,
+.frame .text-wrapper-6 {
+  display: flex;
+  position: absolute;
+  border-top: 1px solid #bda88d;
+  padding: 0.9rem 0px;
+  font-weight: 400;
+  color: #bda88d;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Fix for project text overflowing */
+.frame .p,
+.frame .text-wrapper-4,
+.frame .text-wrapper-5,
+.frame .roommate-matching,
+.frame .text-wrapper-6 {
+  display: block; /* important for wrapping */
+  max-width: 260px; /* or adjust based on your layout */
+  white-space: normal; /* allow wrapping */
+  word-wrap: break-word; /* break long words */
+}
+
+
+
+.frame .p:hover,
+.frame .text-wrapper-4:hover,
+.frame .text-wrapper-5:hover,
+.frame .roommate-matching:hover,
+.frame .text-wrapper-6:hover {
+  transform: translateX(5px);
+  color: #b5a487;
+}
+
+.frame .p { top: 94px; left: 11px; right: 10px; }
+.frame .text-wrapper-4 { top: 161px; left: 11px; right: 10px; }
+.frame .text-wrapper-5 { top: 240px; left: 11px; right: 10px; }
+.frame .roommate-matching { top: 312px; left: 9px; right: 10px; }
+.frame .text-wrapper-6 { top: 391px; left: 8px; width: 272px; }
+
+.frame .text-wrapper-7 {
+  position: absolute;
+  top: 18px;
+  left: 11px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: #ffc892;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .line,
+.frame .img,
+.frame .line-2,
+.frame .line-3 {
+  position: absolute;
+  width: 271px;
+  height: 1px;
+  left: 9px;
+  object-fit: cover;
+}
+
+.frame .line { top: 137px; }
+.frame .img { top: 216px; }
+.frame .line-2 { top: 289px; }
+.frame .line-3 { top: 367px; }
+
+.frame .overlap-2 {
+  position: absolute;
+  width: 958px;
+  height: 323px;
+  top: 86px;
+  left: 7px;
+}
+
+.frame .rounded-rectangle {
+  position: absolute;
+  width: 229px;
+  height: 319px;
+  top: 4px;
+  left: 729px;
+  background-color: #14181b;
+  border-radius: 10px;
+}
+
+.frame .rectangle-2 {
+  width: 714px;
+  height: 317px;
+  top: 4px;
+  position: absolute;
+  left: 0;
+  background-color: #14181b;
+  border-radius: 10px;
+}
+
+.frame .text-wrapper-8 {
+  position: absolute;
+  width: 155px;
+  top: 14px;
+  left: 15px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: #ffc892;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .programming-python-c {
+  position: absolute;
+  width: 761px;
+  top: 71px;
+  left: 16px;
+  font-weight: 400;
+  color: #bda88d;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .anuraag-removebg {
+  position: absolute;
+  width: 229px;
+  top: 47px;
+  left: 730px;
+      border-radius: 13px;
+}
+
+.frame .overlap-3 {
+  position: absolute;
+  width: 621px;
+  height: 353px;
+  top: 421px;
+  left: 7px;
+  background-color: #14181b;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+
+.frame .passionate-about-AI {
+  position: absolute;
+  width: 601px;
+  top: 94px;
+  left: 10px;
+  font-weight: 400;
+  color: #bda88d;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .text-wrapper-9 {
+  position: absolute;
+  top: 23px;
+  left: 15px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: #ffc892;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .div-wrapper {
+  position: absolute;
+  width: 328px;
+  height: 355px;
+  top: 420px;
+  left: 637px;
+  background-color: #b5a487;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.frame .div-wrapper:hover {
+  transform: scale(1.03);
+}
+
+.frame .text-wrapper-10 {
+  position: absolute;
+  top: 263px;
+  left: 17px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3.2rem;
+  font-style: italic;
+  color: #3a2e25;
+  letter-spacing: 0;
+  line-height: normal;
+  cursor: pointer;
+}
+#github-icon {
+  display: flex;
+  align-items: center;
+  font-size: 29px;
+  position: relative;
+    left: 117px;
+
+}
+
+#icon-wrapper {
+  position: absolute;
+  top: 20px;
+  left: 37px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+#icon,
+#github-icon {
+  width: 32px;
+  height: 32px;
+  fill: #bda88d;
+  color: #bda88d; /* for GitHub <i> tag */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#icon:hover,
+#github-icon:hover {
+  transform: scale(1.15);
+}
